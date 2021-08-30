@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="Assignment2.css">
+
+</head>
+
+<body>
+
+<div id="div1">
+    <h1></h1>
+    <form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="formdesign" id="name">
+            Name: <input type="text" name="fname" required><b><br/><span class="formerror"> </span></b>
+        </div>
+        <br/>
+
+       Male: <input type="radio" name="fav_language" value="HTML">
+     Female: <input type="radio" name="fav_language" value="CSS"><br>
+        <br/>
+
+<input type="checkbox" id="Reading" name="Reading" value="Bike">
+<label for="Reading">Reading</label><br>
+<input type="checkbox" id="Playing" name="Playing" value="Car">
+<label for="Playing">Playing</label><br>
+<input type="checkbox" id="Singing" name="Singing" value="Bike">
+<label for="Singing">Singing</label><br>
+<input type="checkbox" id="Swimming" name="Swimming" value="Car">
+<label for="Swimming">Swimming</label><br>
+<br/>
+<label for="text">Address</label><br>
+
+<div>
+<textarea id="text"style="width:350px; height: 40px" maxlength="100">
+Enter text here...
+</textarea>
+   
+</div>
+
+        <input class="but" type="submit" value="Submit">
+
+    </form>
+
+    </div>
+</body>
+<script src="Assignment2.js"></script>
+
+</html>
